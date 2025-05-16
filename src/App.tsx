@@ -1,13 +1,17 @@
-import './index.css'
+import HeroSection from "./components/HeroSection";
+import Offers from "./components/Offers";
+import TopNav from "./components/TopNav";
 
 const App = () => {
   return (
-    <div className='bg-gray-600 h-screen flex items-center justify-center'>
+    <>
+      <TopNav />
+      <div className="bg-[#060809]">
+        <HeroSection />
+        <Offers />
+      </div>
+    </>
+  );
+};
 
-
-      <div>Hello Tailwind</div>
-    </div>
-  )
-}
-
-export default App
+export default App;
